@@ -8,6 +8,25 @@ html {
   block-size: 100%;
 }
 
+h1,
+h2,
+h3,
+h4,
+p,
+ul,
+ol,
+li,
+blockquote,
+fieldset {
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
 .visually-hidden {
   position: absolute;
   inline-size: 1px;
@@ -154,6 +173,7 @@ input[type = "checkbox"]:checked + .search-form__pseudo-checkbox::after {
 
 .button {
   border: 1px solid #FFFFFF;
+  min-height: 34px;
   font-family: inherit;
   color: inherit;
   font-size: inherit;
@@ -183,7 +203,6 @@ input[type = "checkbox"]:checked + .search-form__pseudo-checkbox::after {
 
 .search-form__submit-button {
   width: 194px;
-  height: 34px;
   margin-left: 2px;
   align-self: flex-end;
 }
@@ -200,7 +219,8 @@ input[type = "checkbox"]:checked + .search-form__pseudo-checkbox::after {
 }
 
 .content__accent {
-  opacity: 30%;
+  color:#545050;
+  opacity: 80%;
 }
 
 .content__list-container {
@@ -274,13 +294,12 @@ input[type = "checkbox"]:checked + .search-form__pseudo-checkbox::after {
   font-weight: 100;
   line-height: 16.2px;
   letter-spacing: 0%;
-  text-wrap: nowrap;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  line-clamp: 4;
-  -webkit-line-clamp: 4;
   padding-top: 4px;
+  display: -webkit-box;
+  line-clamp: 4;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
+  overflow: hidden;
 }
 
 .content__video-card-thumbnail {
@@ -294,26 +313,6 @@ input[type = "checkbox"]:checked + .search-form__pseudo-checkbox::after {
   margin: 30px 3px 3px 3px;
   padding: 3px;
   width: 98%;
-  height: 34px;
-}
-
-h1,
-h2,
-h3,
-h4,
-p,
-ul,
-ol,
-li,
-blockquote,
-fieldset {
-  margin: 0;
-  padding: 0;
-}
-
-ul,
-ol {
-  list-style: none;
 }
 
 /* Кастомный скроллбар */
