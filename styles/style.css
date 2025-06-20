@@ -220,7 +220,6 @@ input[type = "checkbox"]:checked + .search-form__pseudo-checkbox::after {
 
 .content__accent {
   color:#545050;
-  opacity: 80%;
 }
 
 .content__list-container {
